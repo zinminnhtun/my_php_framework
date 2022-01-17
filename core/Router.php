@@ -1,7 +1,7 @@
 <?php
 class Router
 {
-    public static $routes=[
+    public $routes=[
         "GET" =>[],
         "POST" =>[]
     ];

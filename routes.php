@@ -11,7 +11,7 @@
 // ]);
 
 use controllers\PagesController;
-use UsersController;
+use controllers\UsersController;
 
 $router->get("", [PagesController::class,"home"]);
 $router->get("about", [PagesController::class,"about"]);

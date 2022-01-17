@@ -2,8 +2,8 @@
 
 return[
     "database" => [
-        "username" => "admin",
-        "password" => "123456",
+        "username" => "root",
+        "password" => "",
         "dbName" => "todo",
         "host" => "mysql:host=localhost",
     ],
