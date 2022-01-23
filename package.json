@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i src/input.css -o public/output.css --watch"
+    "build": "postcss src/input.css -o public/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/zinminnhtun/laravel_framework_thinking#readme",
   "dependencies": {
+    "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.4"
   },

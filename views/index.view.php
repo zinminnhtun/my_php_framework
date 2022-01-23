@@ -18,7 +18,7 @@
     <div class="grid grid-cols-3 auto-cols-min gap-3 my-3">
         <?php foreach ($users as $key => $user): ?>
 
-            <div class="p-3 text-[400px] bg-green-500 text-left text-white hover:bg-black flex items-center overflow-hidden"><?= $user->name ?></div>
+            <div class="w-1/6 md:text-indigo-500 p-3 text-[20px] bg-green-500 text-left text-white hover:bg-black flex items-center overflow-hidden"><?= $user->name ?></div>
 
         <?php endforeach; ?>
     </div>

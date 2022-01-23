@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  mode:'jit',
+  purge: [
+      "./views/**/*.{php,js}"
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
