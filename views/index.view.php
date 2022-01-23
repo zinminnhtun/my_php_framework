@@ -14,11 +14,11 @@
         <input type="submit" class="px-5 py-2 rounded-full cus-sumit text-white" value="submit">
     </form>
 </div>
-<div class="bg-blue-400 flex justify-center items-center w-2/3 p-5 rounded">
+<div class="grid bg-blue-400 flex justify-center items-center w-2/3 p-5 rounded">
     <div class="grid grid-cols-3 auto-cols-min gap-3 my-3">
         <?php foreach ($users as $key => $user): ?>
 
-            <div class="w-1/6 md:text-indigo-500 p-3 text-[20px] bg-green-500 text-left text-white hover:bg-black flex items-center overflow-hidden"><?= $user->name ?></div>
+            <div class="font-bold  font-Dancing bg-slate-500 text-left text-white hover:bg-black flex items-center overflow-hidden"><?= $user->name ?></div>
 
         <?php endforeach; ?>
     </div>

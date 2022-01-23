@@ -5,7 +5,7 @@
         dark = dark[0];
         console.log(dark);
         function dMode(){
-            dark.classList.toggle("dark");
+            dark.classList.toggle("dark mb-[58px]");
         }
     </script>
   </body>

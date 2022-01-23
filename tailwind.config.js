@@ -1,19 +1,8 @@
 module.exports = {
-  mode:'jit',
-  purge: [
-      "./views/**/*.{php,js}"
-  ],
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'class',
+  content: ["./views/**/*.{php,js}"],
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [
-    require('postcss-import'),
-    require('tailwindcss/nesting'),
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
+  plugins: [],
 }
