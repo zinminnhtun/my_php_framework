@@ -1,0 +1,29 @@
+{
+  "name": "my_php_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zinminnhtun/laravel_framework_thinking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zinminnhtun/laravel_framework_thinking/issues"
+  },
+  "homepage": "https://github.com/zinminnhtun/laravel_framework_thinking#readme",
+  "dependencies": {
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "postcss-nesting": "^10.1.2"
+  }
+}
