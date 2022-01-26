@@ -39,6 +39,9 @@
                 if(x==5)
                     this.nav_focus5 = true;
             }
+        },
+        mounted(){
+
         }
     });
 
