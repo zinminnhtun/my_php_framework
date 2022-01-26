@@ -7,10 +7,17 @@ class  QueryBuilder
     {
         $this->pdo = $pdo;
     }
-    
-    public function selectAll($table)
+
+    public function selectAll($table,$col='id',$order='desc')
     {
-        $statement = ($this->pdo)->prepare("select * from $table");
+        $statement = ($this->pdo)->prepare("select * from $table order by $col $order");
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    public function selectOne($table,$key,$value)
+    {
+        $statement = ($this->pdo)->prepare("select * from $table where $key='$value'");
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_OBJ);
     }

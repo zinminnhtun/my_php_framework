@@ -1,7 +1,25 @@
-<nav class="flex justify-around items-center flex-no-wrap bg-gray-300 mb-5 mt-3 text-white py-4 shadow-lg rounded">
-    <a class="border-1 font-bold px-3 py-2 bg-gray-500 rounded transform hover:rotate-1 hover:bg-gray-700 hover:text-blue-400 shadow-xl " href="/">Home</a>
-    <a class="border-1 font-bold px-3 py-2 bg-gray-500 rounded transform hover:rotate-1 hover:bg-gray-700 hover:text-blue-400 shadow-xl " href="/about">About</a>
-    <a class="border-1 font-bold px-3 py-2 bg-gray-500 rounded transform hover:rotate-1 hover:bg-gray-700 hover:text-blue-400 shadow-xl " href="/contact">Contactus</a>
-    <a class="border-1 font-bold px-3 py-2 bg-gray-500 rounded transform hover:rotate-1 hover:bg-gray-700 hover:text-blue-400 shadow-xl " href="/orders">Orders</a>
-    <a class="border-1 font-bold px-3 py-2 bg-gray-500 rounded transform hover:rotate-1 hover:bg-gray-700 hover:text-blue-400 shadow-xl " href="/customers">Customers</a>
-</nav>
+
+<div class="flex justify-between items-center gap-2 w-[96%] mx-auto">
+    <nav class="grow-[96] flex justify-around items-center flex-no-wrap mb-3 mt-2 bg-gray-300 text-white shadow-lg rounded border-b-[1px] border-b-gray-900">
+        <a @click="navFocus(1)" :class="['menu-item',{'focus:text-yellow-500':nav_focus1}]" href="/">
+            <i class="feather-home"></i>
+        </a>
+        <a @click="navFocus(2)" :class="['menu-item',{'focus:text-yellow-500':nav_focus2}]" href="/about">
+            <i class="feather-info"></i>
+        </a>
+        <a @click="navFocus(3)" :class="['menu-item',{'focus:text-yellow-500':nav_focus3}]" href="/contact">
+            <i class="feather-message-square"></i>
+        </a>
+        <a @click="navFocus(4)" :class="['menu-item',{'focus:text-yellow-500':nav_focus4}]" href="/orders">
+            <i class="feather-phone-outgoing"></i>
+        </a>
+        <a @click="navFocus(5)" :class="['menu-item',{'focus:text-yellow-500':nav_focus5}]" href="/customers">
+            <i class="feather-user "></i>
+        </a>
+    </nav>
+    <div :class="['text-[35px] grow-[4] py-[3px] mb-[3px] rounded-xl border-[2px] border-gray-800 hover:bg-gray-500/30 flex justify-center items-center w-[4%]',{'text-white':ismore,'bg-gray-500/50':ismore}]" @click="more"><i class="feather-more-vertical"></i></div>
+</div>
+
+<button onclick="dMode()" class="hidden dark:text-white text-[35px]">
+    <img src="../../public/svg/night-mode-svgrepo-com.svg" alt="" class="w-[35px] h-[35px] dark:invert-[100%]">
+</button>
