@@ -12,6 +12,7 @@
 
 use controllers\PagesController;
 use controllers\UsersController;
+use controllers\ApiController;
 
 $router->get("", [PagesController::class,"home"]);
 $router->get("about", [PagesController::class,"about"]);
@@ -21,11 +22,11 @@ $router->get("customers", [PagesController::class,"customer"]);
 
 
 $router->get("users", [UsersController::class,"index"]);
-
-
 $router->post("names", [PagesController::class,"createUsers"]);
 
+//apiJson
 
+$router->get("api/all",[ApiController::class,"all"]);
 
 
 // $router->get("about", "PagesController@about");

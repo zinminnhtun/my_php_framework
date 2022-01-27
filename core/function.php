@@ -1,5 +1,5 @@
 <?php
-//dd
+
 function dd($data)
 {
     echo "<pre>";
@@ -19,6 +19,14 @@ function view($name, $data=[])
     );
     
     return require "views/$name.view.php";
+}
+
+function api($name,$data=[])
+{
+    extract(
+        $data
+    );
+    return require "apiJson/$name.api.php";
 }
 
 function redirect($uri)

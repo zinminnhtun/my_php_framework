@@ -6,28 +6,21 @@
     dark = dark[0];
     console.log(dark);
 
+
     function dMode() {
         dark.classList.toggle("dark");
-        let x = localStorage.getItem('dMode');
-        if (x==="true"){
-            x=true;
-        }else{
-            x=false;
-        }
-        x=!x;
-console.log(x);
 
-       // if(x=="false"){
-       //      localStorage.setItem('dMode','false');
-       //  }else if(x=="true"){
-       //      localStorage.setItem('dMode','true');
-       //  }else{
-       //     localStorage.setItem('dMode','false');
-       // }
-       //
-       //
-       //  console.log(localStorage.getItem('dMode'));
+        let isDark = document.querySelector(".dark");
 
+        isDark === null ? isDark = 0 : isDark = 1;
+        localStorage.setItem('isDark', isDark);
+    }
+
+    //onload
+    let localIsDark = localStorage.getItem('isDark');
+
+    if (Number(localIsDark)) {
+        dMode();
     }
 
 
@@ -41,7 +34,7 @@ console.log(x);
             nav_focus3: false,
             nav_focus4: false,
             nav_focus5: false,
-            DMode:null,
+            DMode: null,
         },
         methods: {
             more() {
@@ -86,14 +79,16 @@ console.log(x);
                 }
 
             },
-            DMode(){
-                this.Dmode = !this.DMode;
+            isDark() {
+                let isDark = localStorage.getItem('isDark');
+                isDark = Number(isDark);
+                isDark ? this.DMode = true : this.DMode = false;
             }
         },
         mounted() {
-            localStorage.getItem('dMode') == "true" ? this.dMode=true : this.dMode=false;
-                     let x = localStorage.getItem("nav_active");
-                        if (x == 'nav_focus1') {
+
+            let x = localStorage.getItem("nav_active");
+            if (x == 'nav_focus1') {
                 this.nav_focus1 = true;
             } else if (x == 'nav_focus2') {
                 this.nav_focus2 = true;
@@ -101,9 +96,10 @@ console.log(x);
                 this.nav_focus3 = true;
             } else if (x == 'nav_focus4') {
                 this.nav_focus4 = true;
-            } else if (x=='nav_focus5'){
+            } else if (x == 'nav_focus5') {
                 this.nav_focus5 = true;
             }
+            this.isDark();
 
         }
     });

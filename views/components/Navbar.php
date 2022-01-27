@@ -17,11 +17,11 @@
             <i class="feather-user "></i>
         </a>
     </nav>
-    <div :class="['text-[35px] grow-[4] py-[3px] mb-[3px] rounded-xl border-[2px] border-gray-800 hover:bg-gray-500/30 flex justify-center items-center w-[4%] relative',{'text-white':ismore,'bg-gray-500/50':ismore}]" @click="more"><i class="feather-more-vertical"></i>
-        <ul :class="['absolute top-[2.7rem] right-[0rem] w-[10vw] bg-gray-600 text-lg rounded-lg px-3 py-2 dark:text-white',{'hidden' : !ismore}]">
+    <div :class="['text-[35px] grow-[4] py-[3px] mb-[3px] rounded-xl border-[2px] border-gray-800 dark:border-gray-100 hover:bg-gray-500/30 flex justify-center items-center w-[4%] relative',{'ring-2':ismore}]" @click="more"><i class="feather-more-vertical dark:text-white"></i>
+        <ul :class="['absolute top-[2.7rem] right-[0rem] w-[10vw] bg-gray-300 dark:bg-gray-700 text-lg rounded-lg px-3 py-2',{'hidden' : !ismore}]">
             <li>
-                <button onclick="dMode()" class="text-gray-800 dark:text-white text-[35px]">
-                    <img src="../../public/svg/night-mode-svgrepo-com.svg" alt="" class="w-[35px] h-[35px] dark:invert-[100%]">
+                <button onclick="dMode()" class="text-gray-800 text-[35px]">
+                    <img src="../../public/svg/night-mode-svgrepo-com.svg" alt="" class="w-[35px] h-[35px]">
                 </button>
             </li>
             <li>Profile</li>

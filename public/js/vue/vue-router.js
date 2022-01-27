@@ -1766,7 +1766,7 @@
 
   /*  */
 
-  // use User Timing api (if present) for more accurate key precision
+  // use User Timing apiJson (if present) for more accurate key precision
   var Time =
     inBrowser && window.performance && window.performance.now
       ? window.performance

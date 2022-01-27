@@ -16,6 +16,7 @@ class ComposerStaticInit00f83d1dbac864094b6f7b381736f3eb
         'Request' => __DIR__ . '/../..' . '/core/Request.php',
         'Router' => __DIR__ . '/../..' . '/core/Router.php',
         'UsersController' => __DIR__ . '/../..' . '/controllers/UsersController.php',
+        'controllers\\ApiController' => __DIR__ . '/../..' . '/controllers/ApiController.php',
         'controllers\\PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
         'core\\App' => __DIR__ . '/../..' . '/core/App.php',
     );
