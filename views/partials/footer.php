@@ -26,14 +26,14 @@
     //    console.log(a);
 axios({
     method: 'get',
-    url : "http://localhost:8000/api/all"
+    url : "/api/all"
 }).then(res=>console.log(res)).catch(err=>console.log(err));
 
 
     new Vue({
         el: "#app",
         data: {
-            userData  : <?php print_r(json_encode($users,JSON_UNESCAPED_UNICODE)); ?>,
+            userData  : "",
             message: 'how are you? Sleep now',
             ismore: false,
             nav_focus1: false,

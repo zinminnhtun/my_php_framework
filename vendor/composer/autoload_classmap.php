@@ -14,8 +14,9 @@ return array(
     'QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
     'Request' => $baseDir . '/core/Request.php',
     'Router' => $baseDir . '/core/Router.php',
-    'UsersController' => $baseDir . '/controllers/UsersController.php',
     'controllers\\ApiController' => $baseDir . '/controllers/ApiController.php',
+    'controllers\\FileController' => $baseDir . '/controllers/FileController.php',
     'controllers\\PagesController' => $baseDir . '/controllers/PagesController.php',
+    'controllers\\UsersController' => $baseDir . '/controllers/UsersController.php',
     'core\\App' => $baseDir . '/core/App.php',
 );

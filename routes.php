@@ -13,8 +13,15 @@
 use controllers\PagesController;
 use controllers\UsersController;
 use controllers\ApiController;
+use controllers\FileController;
+
+
+// For temporary
+$router->get("Codes/my_php_framework", [PagesController::class,"index"]);
 
 $router->get("", [PagesController::class,"index"]);
+
+
 $router->get("home", [PagesController::class,"home"]);
 $router->get("about", [PagesController::class,"about"]);
 $router->get("contact", [PagesController::class,"contact"]);
@@ -25,17 +32,15 @@ $router->get("customers", [PagesController::class,"customer"]);
 $router->get("users", [UsersController::class,"index"]);
 $router->post("names", [PagesController::class,"createUsers"]);
 
-//apiJson
+//files Save
+$router->post("save",[FileController::class,"file"]);
+//For Temporary
+$router->post("Codes/my_php_framework/save",[FileController::class,"file"]);
 
+//apiJson
 $router->get("api/all",[ApiController::class,"all"]);
 
 
-// $router->get("about", "PagesController@about");
-// $router->get("contact", "PagesController@contact");
-// $router->get("orders", "PagesController@order");
-// $router->get("customers", "PagesController@customer");
-// $router->get("users", "UsersController@index");
 
-// $router->post("names", "PagesController@createUsers");
 
 // dd($router->routes);

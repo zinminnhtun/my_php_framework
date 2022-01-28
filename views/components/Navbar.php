@@ -21,7 +21,7 @@
         <ul :class="['absolute top-[2.7rem] right-[0rem] w-[10vw] bg-gray-300 dark:bg-gray-700 text-lg rounded-lg px-3 py-2',{'hidden' : !ismore}]">
             <li>
                 <button onclick="dMode()" class="text-gray-800 text-[35px]">
-                    <img src="../../public/svg/night-mode-svgrepo-com.svg" alt="" class="w-[35px] h-[35px]">
+                    <img src="../../resources/svg/night-mode-svgrepo-com.svg" alt="" class="w-[35px] h-[35px]">
                 </button>
             </li>
             <li>Profile</li>

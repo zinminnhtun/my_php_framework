@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../public/feather_icon/feather.css">
-    <link rel="stylesheet" href="../../public/output.css">
-    <script src="../../public/js/axios/axios.min.js"></script>
-    <script src="../../public/js/vue/vue.js"></script>
-    <script src="../../public/js/vue/vue-router.js"></script>
+    <link rel="stylesheet" href="../../resources/feather_icon/feather.css">
+    <link rel="stylesheet" href="../../resources/output.css">
+    <script src="../../resources/js/axios/axios.min.js"></script>
+    <script src="../../resources/js/vue/vue.js"></script>
+    <script src="../../resources/js/vue/vue-router.js"></script>
 
 
 </head>

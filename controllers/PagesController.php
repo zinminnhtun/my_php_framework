@@ -41,6 +41,6 @@ class PagesController
         App::get("database")->insert([
             "name"=> request('name'),
         ], "users");
-        redirect('/');
+        redirect('home');
     }
 }

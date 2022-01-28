@@ -25,14 +25,6 @@ function view($name, $data=[],$withVueCli=false)
     }
 }
 
-function api($name,$data=[])
-{
-    extract(
-        $data
-    );
-    return require "apiJson/$name.api.php";
-}
-
 function redirect($uri)
 {
     header("location: $uri");

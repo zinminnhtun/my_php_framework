@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss ./src/input.css -o ./public/output.css --watch"
+    "build": "postcss ./src/input.css -o resources/output.css --watch"
   },
   "repository": {
     "type": "git",

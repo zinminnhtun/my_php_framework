@@ -6,10 +6,9 @@ class ApiController
     public function all()
     {
         $users = App::get("database")->selectAll("users","id","asc");
-
-        api("all", [
-            "users" => $users
-        ]);
+        header('Content-Type: application/json; charset=utf-8');
+        $users = json_encode($users,JSON_UNESCAPED_UNICODE);
+        print_r($users);
     }
     public function about()
     {

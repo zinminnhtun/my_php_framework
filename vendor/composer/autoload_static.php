@@ -15,9 +15,10 @@ class ComposerStaticInit00f83d1dbac864094b6f7b381736f3eb
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'Request' => __DIR__ . '/../..' . '/core/Request.php',
         'Router' => __DIR__ . '/../..' . '/core/Router.php',
-        'UsersController' => __DIR__ . '/../..' . '/controllers/UsersController.php',
         'controllers\\ApiController' => __DIR__ . '/../..' . '/controllers/ApiController.php',
+        'controllers\\FileController' => __DIR__ . '/../..' . '/controllers/FileController.php',
         'controllers\\PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
+        'controllers\\UsersController' => __DIR__ . '/../..' . '/controllers/UsersController.php',
         'core\\App' => __DIR__ . '/../..' . '/core/App.php',
     );
 
