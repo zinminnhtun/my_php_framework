@@ -5,7 +5,7 @@ class ApiController
 {
     public function all()
     {
-        $users = App::get("database")->selectAll("users","id","desc");
+        $users = App::get("database")->selectAll("users","id","asc");
 
         api("all", [
             "users" => $users

@@ -12,13 +12,17 @@ function dp($data)
     die(print_r($data));
 }
 
-function view($name, $data=[])
+function view($name, $data=[],$withVueCli=false)
 {
     extract(
         $data
     );
     
-    return require "views/$name.view.php";
+    if($withVueCli == false){
+        return require "views/$name.view.php";
+    }else{
+        return require "public/index.php";
+    }
 }
 
 function api($name,$data=[])

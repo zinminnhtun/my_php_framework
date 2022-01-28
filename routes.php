@@ -14,7 +14,8 @@ use controllers\PagesController;
 use controllers\UsersController;
 use controllers\ApiController;
 
-$router->get("", [PagesController::class,"home"]);
+$router->get("", [PagesController::class,"index"]);
+$router->get("home", [PagesController::class,"home"]);
 $router->get("about", [PagesController::class,"about"]);
 $router->get("contact", [PagesController::class,"contact"]);
 $router->get("orders", [PagesController::class,"order"]);

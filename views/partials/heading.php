@@ -9,6 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../public/feather_icon/feather.css">
     <link rel="stylesheet" href="../../public/output.css">
+    <script src="../../public/js/axios/axios.min.js"></script>
     <script src="../../public/js/vue/vue.js"></script>
     <script src="../../public/js/vue/vue-router.js"></script>
 

@@ -3,6 +3,15 @@ namespace controllers;
 use core\App;
 class PagesController
 {
+    public function index()
+    {
+        $users = App::get("database")->selectAll("users","id","desc");
+
+        view("index", [
+            "users" => $users
+        ],true);
+    }
+
     public function home()
     {
         $users = App::get("database")->selectAll("users","id","desc");
