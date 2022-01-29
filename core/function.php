@@ -1,5 +1,15 @@
 <?php
 
+function url(){
+//    $dir = "/Codes/my_php_framework";
+    $dir = "";
+    return "http://{$_SERVER["HTTP_HOST"]}{$dir}";
+}
+
+function asset($path){
+    return url()."/resources/".$path;
+}
+
 function dd($data)
 {
     echo "<pre>";

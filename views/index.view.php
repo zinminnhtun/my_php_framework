@@ -1,4 +1,6 @@
+<?php //dd(asset("hello/worle/hhh"));?>
 <?php require "views/partials/heading.php"; ?>
+
 <div>{{ message }}</div>
 <div class="grid grid-cols-[minmax(min-content,1fr)_minmax(min-content,5fr)] justify-items-stretch shadow-lg">
     <div class="justify-self-stretch bg-green-500 flex flex-col items-center items-stretch gap-2 px-4 py-5 border-r-[35px] -mr-[30px] border-r-gray-800">

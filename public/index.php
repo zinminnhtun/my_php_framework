@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../resources/feather_icon/feather.css">
-    <link rel="stylesheet" href="../resources/output.css">
+    <link rel="stylesheet" href="<?= asset("output.css"); ?>">
     <script src="../resources/js/axios/axios.min.js"></script>
     <script src="../resources/js/vue/vue.js"></script>
 </head>
